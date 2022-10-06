@@ -6,13 +6,6 @@ import static org.hamcrest.Matchers.is;
 
 public class ReqresInTestsAper {
 
-    /*
-        1. make POST- request to https://reqres.in/api/login
-            with body { "email": "eve.holt@reqres.in", "password": "pistol" }
-        2. get response { "id": 4, "token": "QpwL5tke4Pnpja7X4" }
-        3. check token is "QpwL5tke4Pnpja7X4"
-     */
-
     @Test
     void postRegisterSuccessful() {
         String body = "{ \"email\": \"eve.holt@reqres.in\", " +
